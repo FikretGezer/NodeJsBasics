@@ -1,16 +1,15 @@
 const fs = require('fs');
 const path = require('path');
-const fsPromises = require('fs').promises;
 
 const fileOps = async() => {
     try{
-        const data = await fsPromises.readFile(path.join(__dirname, 'files', 'newReply.txt'), 'utf-8');
+        const data = await fs.promises.readFile(path.join(__dirname, 'files', 'newReply.txt'), 'utf-8');
         console.log('First data: ' + data);
-        await fsPromises.unlink(path.join(__dirname, 'files', 'newReply.txt'));
-        await fsPromises.writeFile(path.join(__dirname, 'files', 'promises.txt'), data)
-        await fsPromises.appendFile(path.join(__dirname, 'files', 'promises.txt'), "\n\nappending...");
-        await fsPromises.rename(path.join(__dirname, 'files', 'promises.txt'), path.join(__dirname, 'files', 'ultimatePromises.txt'));
-        const newData = await fsPromises.readFile(path.join(__dirname, 'files', 'ultimatePromises.txt'), 'utf-8');
+        await fs.promises.unlink(path.join(__dirname, 'files', 'newReply.txt'));
+        await fs.promises.writeFile(path.join(__dirname, 'files', 'promises.txt'), data)
+        await fs.promises.appendFile(path.join(__dirname, 'files', 'promises.txt'), "\n\nappending...");
+        await fs.promises.rename(path.join(__dirname, 'files', 'promises.txt'), path.join(__dirname, 'files', 'ultimatePromises.txt'));
+        const newData = await fs.promises.readFile(path.join(__dirname, 'files', 'ultimatePromises.txt'), 'utf-8');
         console.log(newData);
     }catch(err)
     {
