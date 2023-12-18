@@ -223,10 +223,3 @@
 18/12/2023	10:10:41	493ecd62-9642-4511-9910-fea1493ef3f8	POST,	undefined	/employees
 18/12/2023	10:11:34	5b349c72-ecd5-4764-9ac1-94e0298bacad	POST,	undefined	/employees
 18/12/2023	10:11:36	3289430f-6c8f-4a8d-951d-37ba8365b23a	POST,	undefined	/employees
-18/12/2023	10:38:22	676830b5-8955-48fe-91b3-ea3170a4898e	POST,	undefined	/auth
-18/12/2023	10:39:02	b351ad4b-00c1-4775-8193-9a875aad070d	POST,	undefined	/auth
-18/12/2023	10:40:27	7e262b22-817e-4f40-a37a-6fac049e7b9a	POST,	undefined	/register
-18/12/2023	10:57:41	f49ba0af-0ec4-4bf3-8140-bf8f5dea99bb	POST,	undefined	/auth
-18/12/2023	10:57:44	4febd9f8-92c2-4956-9a65-b1e8e7839ae9	POST,	undefined	/auth
-18/12/2023	10:57:48	2123a145-6e54-47be-a40d-821b0cf76eec	POST,	undefined	/auth
-18/12/2023	11:02:24	1035c054-2628-45d4-b817-3ad10b1ce6ba	POST,	undefined	/register
