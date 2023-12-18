@@ -1,0 +1,7 @@
+14/12/2023	10:00:01	ed1fa009-b552-4095-94c0-62dabcbdcb50	TypeError: fsPromises.readFil is not a function
+16/12/2023	09:03:02	764c05a3-7353-4c89-af21-5058b4cd8a22	Error: Not allowed by cors
+16/12/2023	09:03:02	286f2799-9643-4fe8-8263-48888e09333e	Error: Not allowed by cors
+17/12/2023	12:33:40	54a15e3c-ed3f-466e-b061-6b18fb791d51	Error: Cannot set headers after they are sent to the client
+17/12/2023	12:34:26	31b0bb8d-b25e-43f6-8ac3-9fbc299339ef	ReferenceError: parsenInt is not defined
+17/12/2023	12:35:13	b0e2d277-2ae2-4abd-b394-deee32cbe606	ReferenceError: parsenInt is not defined
+17/12/2023	12:37:01	dbc9e269-7503-4eab-9ea2-d2198b185ea2	ReferenceError: parsenInt is not defined

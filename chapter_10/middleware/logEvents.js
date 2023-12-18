@@ -4,15 +4,15 @@ const fs = require('fs');
 const promises = fs.promises;
 const path = require('path');
 
-const logEvents = async(message) => {
+const logEvents = async(message, logName) => {
     const dateTime = `${format(new Date(), 'dd/MM/yyyy\tHH:mm:ss')}`;
     const logItem = `${dateTime}\t${uuid()}\t${message}\n`;
 
     console.log(logItem);
     try{
-        if(!fs.existsSync(path.join(__dirname, './logs')))
+        if(!fs.existsSync(path.join(__dirname, '..', './logs')))
         {
-            await fs.mkdir(path.join(__dirname, './logs') , err => {
+            await fs.mkdir(path.join(__dirname, '..', './logs') , err => {
                 if(err)
                 {
                     console.log(err);
@@ -20,7 +20,8 @@ const logEvents = async(message) => {
                 }
             });
         }
-        await promises.appendFile(path.join(__dirname, 'logs', 'eventLog.txt'), logItem);
+
+        await promises.appendFile(path.join(__dirname, '..', 'logs', logName), logItem);
 
     } catch {
         if(err)
@@ -30,7 +31,10 @@ const logEvents = async(message) => {
     }
 }
 
-console.log(format(new Date(), 'dd/MM/yyyy\tHH:mm:ss'));
-console.log(uuid());
+const logger = (req, res, next) => {
+    logEvents(`${req.method},\t${req.headers.origin}\t${req.url}`, 'reqLog.txt');
+    console.log(`${req.method},\t${req.path}`);
+    next();
+}
 
-module.exports = logEvents;
+module.exports = {logEvents, logger};

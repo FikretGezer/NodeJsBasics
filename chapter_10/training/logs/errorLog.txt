@@ -1,0 +1,1 @@
+16/12/2023	11:31:11	b5b8ada9-d03d-49f7-b261-75e710b62622	Error: Not allowed by cors
