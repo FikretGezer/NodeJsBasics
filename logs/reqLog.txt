@@ -247,3 +247,11 @@
 18/12/2023	11:58:53	773ea4ce-7b1e-47c1-a457-439753d73cac	POST,	undefined	/auth
 18/12/2023	11:59:15	8b33d0f2-5f67-4c57-a793-284b898d2112	GET,	undefined	/employees
 18/12/2023	11:59:54	47129fcc-fe38-4c0e-bf98-16b1a0693d78	POST,	undefined	/employees
+19/12/2023	09:55:57	1ee14572-9310-48a2-8ade-a4377896d010	POST,	undefined	/auth
+19/12/2023	09:57:05	c617c7fc-374f-458f-acd0-c39eec388245	POST,	undefined	/auth
+19/12/2023	09:57:08	b3476087-ba40-47ea-8139-0397dc151fb2	GET,	undefined	/refresh
+19/12/2023	10:10:03	579f192a-3e55-4c7f-965b-7aaebf08b883	POST,	undefined	/auth
+19/12/2023	10:10:33	c8d63dbc-2ae9-4143-88a9-6c9633d79fd7	GET,	undefined	/logout
+19/12/2023	10:10:54	3279f7d3-9de4-4e27-8cf3-c42ff9b4a2fd	POST,	undefined	/auth
+19/12/2023	10:11:11	9f3211d8-1a8e-4b9d-8dca-da6e371ca053	GET,	undefined	/logout
+19/12/2023	10:11:28	620fb43a-6cfe-4809-b79c-a39f6d864d17	GET,	undefined	/refresh
